@@ -249,3 +249,44 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+const toggleBtn = document.getElementById("darkModeToggle");
+const icon = toggleBtn.querySelector("i");
+
+toggleBtn.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    localStorage.setItem("theme","dark");
+    icon.classList.remove("bi-moon-fill");
+    icon.classList.add("bi-sun-fill");
+  } else {
+    localStorage.setItem("theme","light");
+    icon.classList.remove("bi-sun-fill");
+    icon.classList.add("bi-moon-fill");
+  }
+
+});
+
+window.onload = () => {
+
+  if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    icon.classList.remove("bi-moon-fill");
+    icon.classList.add("bi-sun-fill");
+  }
+
+};
+
+const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+function mobileNavToogle() {
+  document.querySelector('body').classList.toggle('mobile-nav-active');
+  mobileNavToggleBtn.classList.toggle('bi-list');
+  mobileNavToggleBtn.classList.toggle('bi-x');
+}
+
+mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+

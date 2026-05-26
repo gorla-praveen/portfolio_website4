@@ -1627,3 +1627,267 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+
+.dark-mode{
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode section{
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .service-item,
+.dark-mode .portfolio-info,
+.dark-mode .info-wrap,
+.dark-mode .about{
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+
+.dark-toggle-btn{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark-toggle-btn:hover{
+  transform: scale(1.1);
+  color: #00bcd4;
+}
+
+.project-buttons{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-buttons .btn{
+  border-radius: 30px;
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* Large Desktop */
+@media (min-width: 1400px){
+
+  .hero h2{
+    font-size: 72px;
+  }
+
+}
+
+
+/* Desktop */
+@media (max-width: 1200px){
+
+  .service-item{
+    padding: 30px 20px;
+  }
+
+}
+
+
+/* Tablet */
+@media (max-width: 992px){
+
+  .hero h2{
+    font-size: 48px;
+  }
+
+  .about .about-info{
+    margin-top: 20px;
+  }
+
+  .service-item{
+    text-align: center;
+  }
+
+  .project-buttons{
+    justify-content: center;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .hero h2{
+    font-size: 36px;
+  }
+
+  .hero p{
+    font-size: 18px;
+  }
+
+  .section-title h2{
+    font-size: 32px;
+  }
+
+  .about img{
+    margin-bottom: 20px;
+  }
+
+  .stats-item{
+    margin-bottom: 30px;
+  }
+
+  .testimonial-item{
+    padding: 20px;
+  }
+
+  .project-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-buttons .btn{
+    width: 100%;
+  }
+
+}
+
+
+/* Small Mobile */
+@media (max-width: 576px){
+
+  .hero h2{
+    font-size: 28px;
+  }
+
+  .hero p{
+    font-size: 16px;
+  }
+
+  .section-title h2{
+    font-size: 26px;
+  }
+
+  .service-item{
+    padding: 25px 15px;
+  }
+
+  .service-item h3{
+    font-size: 20px;
+  }
+
+  .contact .info-item{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .social-links a{
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+/* =========================
+   MOBILE NAVBAR FIX
+========================= */
+
+@media (max-width: 1199px){
+
+  .navmenu ul{
+    display: none;
+  }
+
+  .navmenu.navmenu-active ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 250px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+  }
+
+  .navmenu ul li{
+    margin: 10px 0;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    z-index: 99999;
+  }
+
+}
+
+/* =========================
+   MOBILE TOGGLE FIX
+========================= */
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1199px){
+
+  .mobile-nav-toggle{
+    display: block !important;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    z-index: 9999;
+    position: relative;
+  }
+
+}
+
+/* =========================
+   ABOUT SECTION FIX
+========================= */
+
+.about-me p{
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-me h4{
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* MOBILE NAV TOGGLE FIX */
+
+.mobile-nav-toggle{
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1199px){
+
+  .mobile-nav-toggle{
+    display: block !important;
+  }
+
+}

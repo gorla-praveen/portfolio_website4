@@ -23,6 +23,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -53,27 +54,16 @@
           <li><a href="#about">About</a></li>
            <li><a href="#projects">Projects</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+            
+              
           <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+        
+              <i class="mobile-nav-toggle d-xl-none bi bi-list text-white"></i>
+                                <li>
+  <button id="darkModeToggle" class="dark-toggle-btn">
+    <i class="bi bi-moon-fill"></i>
+  </button>
+</li></nav>
 
     </div>
   </header>
@@ -151,7 +141,7 @@
          <div class="about-me">
   <h4>About Me</h4>
 
-  <p>
+   <p>
     I am a passionate Frontend Developer with a strong interest in creating modern,
     responsive, and user-friendly websites. I enjoy turning ideas into interactive
     digital experiences using HTML, CSS, JavaScript, and Bootstrap.
@@ -176,6 +166,7 @@
 
     </section><!-- /About Section -->
 
+
   
 
     </section><!-- /Resume Section -->
@@ -185,95 +176,201 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+       <div class="row gy-4">
 
-      <div class="container">
+  <!-- Project 1 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="service-item position-relative">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
+      <div class="icon">
+        <i class="bi bi-airplane"></i>
       </div>
 
-    </section><!-- /Services Section -->
+      <h3>Travel Booking Website</h3>
 
+      <p>
+        Responsive travel website with booking form,
+        gallery, testimonials, and modern UI.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen/travel_website3"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="https://gorla-praveen.github.io/travel_website3/"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="service-item position-relative">
+
+      <div class="icon">
+        <i class="bi bi-cart"></i>
+      </div>
+
+      <h3>E-Commerce Website</h3>
+
+      <p>
+        Shopping website with cart functionality,
+        responsive product sections, and Bootstrap UI.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="#"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <div class="service-item position-relative">
+
+      <div class="icon">
+        <i class="bi bi-bag-check"></i>
+      </div>
+
+      <h3>Food Delivery Website</h3>
+
+      <p>
+        Food ordering website with menu section,
+        restaurant listings, and responsive design.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="#"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="service-item position-relative">
+
+      <div class="icon">
+        <i class="bi bi-calendar-event"></i>
+      </div>
+
+      <h3>Event Management Website</h3>
+
+      <p>
+        Event website with ticket booking UI,
+        countdown timer, speakers section, and gallery.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="#"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+    <div class="service-item position-relative">
+
+      <div class="icon">
+        <i class="bi bi-person-badge"></i>
+      </div>
+
+      <h3>Portfolio Website</h3>
+
+      <p>
+        Personal portfolio website showcasing skills,
+        projects, dark mode, animations, and contact form.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="#"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 6 -->
+  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+    <div class="service-item position-relative">
+
+      <div class="icon">
+        <i class="bi bi-journal-code"></i>
+      </div>
+
+      <h3>Sara Travels</h3>
+
+      <p>
+        Collection of frontend mini projects for improving
+        UI/UX, layouts, responsiveness, and JavaScript skills.
+      </p>
+
+      <div class="project-buttons mt-3">
+        <a href="https://github.com/gorla-praveen/landingpage"
+           target="_blank"
+           class="btn btn-dark btn-sm">
+           GitHub
+        </a>
+
+        <a href="https://gorla-praveen.github.io/landingpage/"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+           View Project
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
     <!-- Stats Section -->
     <section id="stats" class="stats section accent-background">
 
