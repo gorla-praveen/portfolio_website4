@@ -40,33 +40,45 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Portfolio</h1>
-      </a>
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-           <li><a href="#projects">Projects</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-            
-              
-          <li><a href="#contact">Contact</a></li>
-        
-              <i class="mobile-nav-toggle d-xl-none bi bi-list text-white"></i>
-                                <li>
-  <button id="darkModeToggle" class="dark-toggle-btn">
-    <i class="bi bi-moon-fill"></i>
-  </button>
-</li></nav>
+    <!-- Logo -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="sitename">Portfolio</h1>
+    </a>
 
-    </div>
-  </header>
+    <!-- MOBILE TOGGLER (MUST BE HERE) -->
+  <button class="mobile-nav-toggle" style="background:none;border:none;cursor:pointer;display:none;padding:4px;">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+    <line x1="3" y1="6" x2="21" y2="6"/>
+    <line x1="3" y1="12" x2="21" y2="12"/>
+    <line x1="3" y1="18" x2="21" y2="18"/>
+  </svg>
+</button>
+  <i class="mobile-nav-toggle bi bi-list"></i>
+
+    <!-- NAV -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+       
+      </ul>
+    </nav>
+   
+          <button id="darkModeToggle" class="dark-toggle-btn">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+       
+
+  </div>
+
+</header>
 
   <main class="main">
 
@@ -92,7 +104,7 @@
 
             <div class="row justify-content-between gy-4">
               <div class="col-lg-5">
-                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80" class="img-fluid" alt="Profile Image">
               </div>
               <div class="col-lg-7 about-info">
                 <p><strong>Name: </strong> <span>Gorla Praveen</span></p>
@@ -816,7 +828,12 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script>
+ const toggle = document.querySelector('.mobile-nav-toggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('mobile-nav-active');
+});
+</script>
 </body>
 
 </html>

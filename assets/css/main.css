@@ -320,14 +320,29 @@ h6 {
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto; /* pushes it to the far right */
+  order: 3;          /* ensures it comes after logo and nav */
+}
+
+@media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+    display: block !important;
   }
+
+  #navmenu {
+    display: none;
+  }
+
+  body.mobile-nav-active #navmenu {
+    display: block;
+  }
+}
 
   .navmenu {
     padding: 0;
@@ -1800,13 +1815,43 @@ section,
    MOBILE NAVBAR FIX
 ========================= */
 
-@media (max-width: 1199px){
+/* =========================
+   DESKTOP NAV (DEFAULT)
+========================= */
 
-  .navmenu ul{
+.navmenu ul {
+  display: flex;
+  list-style: none;
+}
+
+/* hide toggle on desktop */
+.mobile-nav-toggle {
+  color: #fff;  /* or #333 for dark text */
+  font-size: 28px;
+  cursor: pointer;
+  display: none;  /* shown only on mobile */
+  line-height: 0;
+}
+
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+/* =========================
+   MOBILE / TABLET VIEW
+========================= */
+
+@media (max-width: 1199px) {
+
+  /* hide menu */
+  .navmenu ul {
     display: none;
   }
 
-  .navmenu.navmenu-active ul{
+  /* show menu when active */
+  .navmenu.navmenu-active ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1819,75 +1864,40 @@ section,
     z-index: 9999;
   }
 
-  .navmenu ul li{
+  .navmenu ul li {
     margin: 10px 0;
   }
 
-  .mobile-nav-toggle{
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    z-index: 99999;
-  }
-
-}
-
-/* =========================
-   MOBILE TOGGLE FIX
-========================= */
-
-.mobile-nav-toggle{
-  display: none;
-}
-
-/* Tablet & Mobile */
-@media (max-width: 1199px){
-
-  .mobile-nav-toggle{
+  /* show toggle button */
+  .mobile-nav-toggle {
     display: block !important;
     font-size: 30px;
-    color: #000;
     cursor: pointer;
-    z-index: 9999;
+    color: #000;
     position: relative;
+    z-index: 10000;
   }
-
 }
 
 /* =========================
-   ABOUT SECTION FIX
+   ABOUT SECTION (CLEAN)
 ========================= */
 
-.about-me p{
+.about-me p {
   color: #444;
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 15px;
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-.about-me h4{
+.about-me h4 {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 700;
 }
-
-/* MOBILE NAV TOGGLE FIX */
-
-.mobile-nav-toggle{
-  font-size: 32px;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 1199px){
-
-  .mobile-nav-toggle{
-    display: block !important;
-  }
-
+@media (max-width: 1199px) {
+  .mobile-nav-toggle { display: block !important; }
 }
